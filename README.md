@@ -22,8 +22,7 @@ github report link: https://github.com/NgoKhangDK/Moonlight-G6-Eproject/tree/mas
 
 ============================
 
-eProject published at: https://
-
+eProject published at: https://ngokhangdk.github.io/Moonlight-G6-Eproject/
 ============================
 
 Thank you for spending your time to look at our work.
