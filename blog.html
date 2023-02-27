@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moonlight-Events | News</title>
+  <link rel='shortcut icon' href='https://play-lh.googleusercontent.com/3_XlWW-JEdHK2r5SoPtX8e5g9v6j9s9HeY2qwb2H8VSJplFP5w1-qvJE-JzPFLPqnw=w480-h960-rw' />
+
+  <!-- -----------------------------------------------Main Css------------------------------------------ -->
+  <link rel="stylesheet" href="css/homepage.css">
+
+  <!-- ------------------------------------------Bootstrap vs css---------------------------------------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index2.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- -----------------------------------------Fancybox-------------------------------------------- -->
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+
+  <!-- -----------------------------------------Owl carousel---------------------------------------- -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+
+  <!-- ----------------------------Glaticon vs Fontawsome(Icon)--------------------------------------- -->
+  <link rel="stylesheet" href="glaticon/font/flaticon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- ----------------------------Animate(Fade Effect)------------------------------------------------ -->
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <!-- ---------------------------- Js -------------------------------------------------------- -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <style>
+    footer{
+      background-color: #333;
+    }
+    .blog .filterDiv {
+      float: left;
+      background-color: #ffffff;
+      color: #ffffff;
+      width: 100%;
+      line-height: 100px;
+      text-align: center;
+      margin-left: 35px;
+      margin-top: 30px;
+      display: none;
+      /* Hidden by default */
+    }
+
+    /* The "show" class is added to the filtered elements */
+    .blog .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+    .blog .btn {
+      border: none;
+      outline: none;
+      padding: 15px 18px;
+      margin: 5px;
+      font-size: 18px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+
+    }
+
+    /* Add a light grey background on mouse-over */
+    .blog .btn:hover {
+      background-color: #ddd;
+    }
+
+    /* Add a dark background to the active button */
+    .blog .active {
+      background-color: rgb(202, 11, 154);
+      color: white;
+      outline: none;
+    }
+
+    .blog .bton {
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-------------------------------------- BACK-TO-TOP BUTTTON --------------------------------------------- -->
+  <a class="btt-button"><i class="fa fa-angle-double-up"></i></a>
+
+  <!--STAR HEADER: Logo - Time - Hotline - Login -->
+  <!-- ============================================================== -->
+  <header>
+
+    <!-- Header TOP: Logo - Time - Hotline - Login -->
+    <div class="container headertop wow fadeInDown" data-wow-delay="0.3s">
+      <div class="row">
+
+        <div class="col-md-2">
+          <img src="https://play-lh.googleusercontent.com/3_XlWW-JEdHK2r5SoPtX8e5g9v6j9s9HeY2qwb2H8VSJplFP5w1-qvJE-JzPFLPqnw=w480-h960-rw"width="80px"  class="img-responsive center-block logo" alt="Logo">
+        </div>
+
+        <div class="headertopright">
+          <div class="col-md-9 col-md-offset-1">
+
+            <div class="col-md-3">
+              <div class="top-bar-item ">
+                <div class="top-bar-icon">
+                  <i class="flaticon-time"></i>
+                </div>
+                <div class="top-bar-text">
+                  <p>Open Hour</p>
+                  <p>8.AM-17.PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 ">
+              <div class="top-bar-item ">
+                <div class="top-bar-icon">
+                  <i class="flaticon-smartphone"></i>
+                </div>
+                <div class="top-bar-text">
+                  <p>Hotline</p>
+                  <p>012 345 678</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 ">
+              <div class="top-bar-item ">
+                <div class="top-bar-icon">
+                  <i class="flaticon-user"></i>
+                </div>
+                <div class="top-bar-text">
+                  <h3><a href="login.html">Account</a></h3>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </div> <!-- END Header TOP -->
+
+    <!--Header Navigation: Menu Trai - Menu Phai -->
+    <div class="navbar navbar-default header-inner wow fadeInRight" data-wow-delay="0.3s">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="hide-icon col-1"><a href="login.html">
+            <i class="flaticon-user"></i></a>
+        </div>
+        </div>
+
+        <div class="col-lg-12 ">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+            <!-- Menu Trai -->
+            <ul class="nav navbar-nav col-lg-9 col-md-9">
+              <li> <a href="index.html"> <b>Home</b> </a></li>
+              <li class="active"> <a href="blog.html"><b>News</b></a></li>
+              <li> <a href="product.html"><b>Products</b></a></li>
+             
+              <li> <a href="gallery.html"><b>Gallery</b></a></li>
+              <li> <a href="about.html"><b>About Us</b></a></li>
+              <li> <a href="contact.html"><b>Contact Us</b></a></li>
+            </ul>
+
+            <!-- Menu Phai -->
+            <ul class="nav navbar-nav navbar-right col-lg-3 col-md-3 col-sm-3">
+              <form class="navbar-form navbar-left search" action="index.html">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-danger" type="submit">
+                      <i class=""><span class="fa fa-search"></span></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class=" account-icon "><a href="login.html">
+                  <i class="flaticon-add-user"></i></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </header>
+  <!--END HEADER-->
+
+  <!------------------------------------------------- BLOG CONTENT START ------------------------------------>
+  <div class="blog">
+    <div class="banner banner1  wow fadeInRight" data-wow-delay="0.1s">
+    </div>
+    <div class="heading-section  wow fadeInLeft" data-wow-delay="0.1s">
+      <h1>Moonlight-Events  <span>News</span></h1>
+      <P>Let discover the world</P>
+    </div>
+    <div id="myBtnContainer" class="bton">
+      <button class="btn active wow fadeInUp" data-wow-delay="0.2s" onclick="filterSelection('p1')"> 1</button>
+      <button class="btn wow fadeInUp" data-wow-delay="0.4s" onclick="filterSelection('p2')"> 2</button>
+      
+    </div>
+    <div class="container">
+      <!-- p1 -->
+      <div class="filterDiv p1">
+        <div class="row p1">
+          <div class="content-section ">
+
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.1s">
+              <a href="https://parade.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkwNTc1OTc2OTQwNzA4OTg5/best-christmas-quotes.webp" target="_blank"> <img
+                  src="https://parade.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkwNTc1OTc2OTQwNzA4OTg5/best-christmas-quotes.webp" alt=""> </a>
+              <h4>United States</h4>
+              <a href="https://en.wikipedia.org/wiki/Christmas" target="_blank">
+                <h3>Chirstmas (december 25)</h3>
+              </a>
+              <p>The most important day in the United States is December 25th, which is Christmas Day. It is usually celebrated with a big family dinner in the style of Thanksgiving dinner and usually includes roast turkey, mashed potatoes, and salty meat pies. Plus, it's the day Santa Claus arrives!
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.2s">
+              <a href="https://www.andbeyond.com/wp-content/uploads/sites/5/india-holi-colours.jpg" target="_blank"> <img
+                  src="https://www.andbeyond.com/wp-content/uploads/sites/5/india-holi-colours.jpg" alt=""> </a>
+              <h4>India</h4>
+              <a href="https://en.wikipedia.org/wiki/Holi" target="_blank">
+                <h3>Holi</h3>
+              </a>
+              <p>Holi is one of the best popular festivals of india. At this lovely festival family and friends gather mostly wearing white cloths to sing, dance and play with colours. Holi is played by throwing dry and wet colours on each other. On Holi special sweet known as Gujiya is prepared and enjoyed by eeryone.
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.3s">
+              <a
+                href="https://lp-cms-production.imgix.net/features/2012/08/BrazilsBestCarnivals_CS-3e2f092773dc.jpg?auto=format&q=75&w=3840" target="_blank">
+                <img src="https://lp-cms-production.imgix.net/features/2012/08/BrazilsBestCarnivals_CS-3e2f092773dc.jpg?auto=format&q=75&w=3840" alt=""> </a>
+              <h4>Brazil</h4>
+              <a
+                href="https://en.wikipedia.org/wiki/Brazilian_Carnival" target="_blank">
+                <h3>Carnival - The most exciting festival</h3>
+              </a>
+              <p> Carnival is undoubtedly one of the biggest, oldest and most popular festivals in Brazil, held mainly in Rio de Janerio, but can also be sttended in other cities such as Salvador and Recife.
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row p1">
+          <div class="content-section">
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.1s">
+              <a href="https://people.com/thmb/zorAhdKq3NxyPEGSjNkf7manfNE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2):format(webp)/lunar-new-year-8-79db07041a3547ed8f3ba616a48e28c6.jpg" target="_blank"> <img
+                src="https://people.com/thmb/zorAhdKq3NxyPEGSjNkf7manfNE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2):format(webp)/lunar-new-year-8-79db07041a3547ed8f3ba616a48e28c6.jpg" alt=""> </a>
+              <h4>China</h4>
+              <a href="https://en.wikipedia.org/wiki/Chinese_New_Year"  target="_blank">
+                <h3>Chinese New Year (Date, Traditions, Animal Signs)</h3>
+              </a>
+              <p>Chinese New Year is one of the most important cultural celebrations and has been celebrated for over four thousand years. It is an ancient celebration which takes place to ...
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.2s">
+              <a href="https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2023/1/10/tet-nguyen-dan-1673318634018292874670.jpg" target="_blank"> <img src="https://giadinh.mediacdn.vn/thumb_w/640/296230595582509056/2023/1/10/tet-nguyen-dan-1673318634018292874670.jpg" alt=""> </a>
+              <h4>VietNam</h4>
+              <a href="https://vi.wikipedia.org/wiki/T%E1%BA%BFt_Nguy%C3%AAn_%C4%90%C3%A1n" target="_blank">
+                <h3>Lunar New Year (Tet Nguyen Dang)</h3>
+              </a>
+              <p>Nunar New Year, or Tet, is considered the most important festival and holiday in Vietnam. All schools, companies, factories are temporarily closed. It is the occasion
+                for family unionsand gatherings when people return to their families. 
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.3s">
+              <a
+                href="https://static01.nyt.com/images/2020/12/27/multimedia/27nye-athome/27nye-athome-jumbo.jpg?quality=75&auto=webp" target="_blank">
+                <img src="https://static01.nyt.com/images/2020/12/27/multimedia/27nye-athome/27nye-athome-jumbo.jpg?quality=75&auto=webp" alt=""> </a>
+              <h4>Russia</h4>
+              <a
+                href="https://www.thepeopleofasia.com/articles/topic-arts-culture/5-southeast-asias-traditional-handicrafts-you-need-to-know/" target="_blank">
+                <h3>New Year Celebrations - 31st December - 1st January</h3>
+              </a>
+              <p>
+                New Years is the most important holiday on the Russian festivals calendar. Although it's primarily a family affair, where on New Year's Eve, relatives gather at home for a
+                 huge feast and the exchange of gifts around a fir tree, tourists
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p1">
+          <div class="content-section">
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.1s">
+              <a
+                href="https://www.vietnam-tour.biz/wp-content/uploads/2017/10/Hung-King-festival1.jpg" target="_blank">
+                <img src="https://www.vietnam-tour.biz/wp-content/uploads/2017/10/Hung-King-festival1.jpg" alt=""> </a>
+              <h4>VietNam</h4>
+              <a
+                href="https://en.wikipedia.org/wiki/H%C3%B9ng_Kings%27_Festival" target="_blank">
+                <h3>Hung King Temple Festival</h3>
+              </a>
+              <p>Recommended place: Hung Temple, Co Tich village, Hy Cuong commune, Phong Chau district, Phu Tho province
+                Hung King Temple festival is a national event that is held in Phu Tho. As its name suggest, it takes place annually to commemorate Hung Kings the founder of the nation.
+                 
+
+              </p>
+            </div>
+            <div class="col-lg-4  col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.2s">
+              <a
+                href="https://media.cnn.com/api/v1/images/stellar/prod/220906132338-05-brazil-independence-day-bolsonaro-supporters-2021.jpg?c=16x9&q=h_270,w_480,c_fill" target="_blank">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/220906132338-05-brazil-independence-day-bolsonaro-supporters-2021.jpg?c=16x9&q=h_270,w_480,c_fill" alt=""> </a>
+              <h4>Brazil</h4>
+              <a
+                href="https://en.wikipedia.org/wiki/Independence_Day_(Brazil)" target="_blank">
+                <h3>Vitory day</h3>
+              </a>
+              <p>
+                This is basically a festival which includes a lot of Patriotic sentiments while remembering the victory of Soviet Union after a tremendous fight with the Nazi pawer. It is also broadly celebrated by by the military unit of Russia. 
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.3s">
+              <a href="https://elcomercio.pe/resizer/v92jfNgyJnsRnBTnKdq9pV0LkvY=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NIS5DDYX6NFWRLUWIFYUNUXWQA.png" target="_blank"> <img src="https://elcomercio.pe/resizer/v92jfNgyJnsRnBTnKdq9pV0LkvY=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NIS5DDYX6NFWRLUWIFYUNUXWQA.png" alt="">
+              </a>
+              <h4>Mexico</h4>
+              <a href="https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Virgen_de_Guadalupe" target="_blank">
+                <h3>Día de la Virgen de Guadalupe</h3>
+              </a>
+              <p>
+                Día de la Virgen de Guadalupe is a religious and national holiday honouring the Catholic saint each December 12th and featuring parades, fireworks, and parties in addition to special mass. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!------------------------------------------------------------------ p2 -->
+      <div class="filterDiv p2">
+        <div class="row">
+          <div class="content-section">
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.1s">
+              <a href="https://magyarnarancs.hu/data/298831454_10162115831638975_8782861829615013438_n_fit_800x10000.jpg?key=1d4c1c6c2b15aab8527bc41f4a30a799" target="_blank"> <img
+                  src="https://magyarnarancs.hu/data/298831454_10162115831638975_8782861829615013438_n_fit_800x10000.jpg?key=1d4c1c6c2b15aab8527bc41f4a30a799" alt=""> </a>
+              <h4>Sziget Festival</h4>
+              <a href="http://www.blog.authindia.com/gond-art-your-vibes-attract-your-tribes/" target="_blank">
+                <h3>The Sziget Festival is a six-day-long music festival held every August in Hungary</h3>
+              </a>
+             
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.2s">
+              <a href="https://cdn.tgdd.vn/Files/2022/04/07/1424527/ngay-le-ta-on-la-gi-nguon-goc-y-nghia-viec-an-ga-tay-trong-ngay-le-ta-on-202204071643297199.jpg" target="_blank"> <img
+                  src="https://cdn.tgdd.vn/Files/2022/04/07/1424527/ngay-le-ta-on-la-gi-nguon-goc-y-nghia-viec-an-ga-tay-trong-ngay-le-ta-on-202204071643297199.jpg" alt=""> </a>
+              <h4>USA</h4>
+              <a href="https://en.wikipedia.org/wiki/Thanksgiving" target="_blank">
+                <h3>Thanksgiving (november 4th Thursday)</h3>
+              </a>
+              <p>Thanksgiving day in the United States is a mixture of myth and history. Students in schools and Christians often only know it as a holiday to give thanks to the Christian God.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.3s">
+              <a
+                href="https://dulichviet.com.vn/images/bandidau/nhung-le-hoi-truyen-thong-o-my.jpg" target="_blank">
+                <img src="https://dulichviet.com.vn/images/bandidau/nhung-le-hoi-truyen-thong-o-my.jpg" alt=""> </a>
+              <h4>USA</h4>
+              <a
+                href="https://en.wikipedia.org/wiki/Barnesville_Pumpkin_Festival" target="_blank">
+                <h3>Mash festival, Barnesville</h3>
+              </a>
+              <p> The most fascinating festival in the US is also a relative "weird and fun" festival that many people will love - the mashed festival ( the mashed potato festival).
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="content-section">
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.1s">
+              <a href="https://www.agoda.com/wp-content/uploads/2020/03/music-festivals-2020-EDC-Electric-Daisy-Carnival-in-Las-Vegas.jpg" target="_blank"> <img src="https://www.agoda.com/wp-content/uploads/2020/03/music-festivals-2020-EDC-Electric-Daisy-Carnival-in-Las-Vegas.jpg" alt="">
+              </a>
+              <h4>Las Vegas, USA</h4>
+              <a href="https://en.wikipedia.org/wiki/Electric_Daisy_Carnival" target="_blank">
+                <h3>EDC: Electric Daisy Carnival</h3>
+              </a>
+              <p>Electric Daisy Carnival, also known as EDC Las Vegas, is North America’s largest electronic dance festival and is held annually at Las Vegas Motor Speedway.
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 card wow fadeInUp" data-wow-delay="0.2s">
+              <a href="https://radseason.com/wp-content/uploads/2018/09/Epizode-DJ.jpeg" target="_blank"> <img src="https://radseason.com/wp-content/uploads/2018/09/Epizode-DJ.jpeg" alt=""> </a>
+              <h4>Vietnam-Phu Quoc Island</h4>
+              <a href="https://epizode.eu/" target="_blank">
+                <h3> Epizode</h3>
+              </a>
+              <p>This music festival happens on the Phu Quoc Islands which is a stunning place in itself. Epizode is much more elaborate since it happens for 12 days starting in late December and extending till the first week of January.
+              </p>
+            </div>
+           
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+      
+        </div>
+
+        
+        </div>
+
+
+
+      
+
+      
+    </div>
+
+
+
+    <script>
+      
+      filterSelection('p1')
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[1].className = current[1].className.replace("active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+
+  </div>
+  <!--------------------------------------------------- Blog content end ------------------------------------->
+
+
+
+
+
+
+
+
+
+<!--------------------------------------- FOOTER START ---------------------------------------------->
+<div class="footer wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-lg-3">
+              <div class="footer-contact">
+                <h2>Contact</h2>
+                <p><i class="fa fa-map-marker-alt"></i>
+                    391A Nam Ky Khoi Nghia, District 3, Ho Chi Minh City
+                    </p>
+                <p><i class="fa fa-phone-alt"></i>+123 456 789</p>
+                <p><i class="fa fa-envelope"></i>group6@gmail.com</p>
+
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+              <div class="footer-link">
+                <h2>Quick Link</h2>
+                <a href="product.html">Vietnamese Traditions</a>
+                <a href="product.html">American Traditions</a>
+                <a href="product.html">Russian Traditions</a>
+                <a href="product.html">Mexican Traditions</a>
+                <a href="product.html">Japanese Traditions</a>
+                <a href="product.html">.....</a>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+              <div class="news">
+                  <h2>Quick chat</h2>
+                  <p>
+                      Chat with us anything you want
+                  </p>
+                  <div class="form">
+                      <form action="" onsubmit="alert('Thanks for chatting with us!')">
+                      <input class="form-control"  placeholder="Chat with us " required>
+                      <button class="btn" type="submit">Submit</button>
+                      </form>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid copyright">
+      <div class="row">
+          <div class="col-md-4">
+              <p>&copy; <a href="index.html">Moonlight-Events</a>
+          </div>
+          <div class="footer-social col-md-4 ">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>                   
+          </div>
+          <div class="col-md-4 ">
+              <p><a href="">Group 6</a></p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- --------------------------------------Footer End--------------------------------------------- -->
+
+
+
+  <!-- ------------------------------------------script homepage------------------------------------------- -->
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script>
+
+
+    //Sticky Navbar
+    $(function () {
+      var navbar = $('.header-inner');
+      $(window).scroll(function () {
+        if ($(window).scrollTop() <= 100) {
+          navbar.removeClass('navbar-scroll');
+        } else {
+          navbar.addClass('navbar-scroll');
+        }
+      });
+    });
+
+    // Scroll to Top button
+    var btn = $('.btt-button');
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>

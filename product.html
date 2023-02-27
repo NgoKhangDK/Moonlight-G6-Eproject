@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Khai bao Mobile first: Ưu tien di dong -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- width=device-width => Se hien thi theo do rong thiet bi -->
+  <!-- initial-scale=1.0 => Muc Zoom mac dinh ban dau -->
+
+  <!-- -----------------------------------------------Main Css------------------------------------------ -->
+  <link rel="stylesheet" href="css/homepage.css">
+
+  <!-- ------------------------------------------Bootstrap vs css---------------------------------------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/index2.css">
+  <link rel="stylesheet" href="css/responsive.css">
+ 
+  
+
+  <!-- ----------------------------Glaticon vs Fontawsome(Icon)--------------------------------------- -->
+  <link rel="stylesheet" href="glaticon/font/flaticon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- ----------------------------Animate(Fade Effect)------------------------------------------------ -->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- ---------------------------- Js -------------------------------------------------------- -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <title>Moonlight-Events | Products</title>
+  <link rel='shortcut icon' href='https://play-lh.googleusercontent.com/3_XlWW-JEdHK2r5SoPtX8e5g9v6j9s9HeY2qwb2H8VSJplFP5w1-qvJE-JzPFLPqnw=w480-h960-rw' />
+  <style>
+    
+.col-wrap {
+  display: table;
+  width: 100%;
+}
+
+.col {
+  display: table-cell;
+  padding: 1rem
+}
+
+.col:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+.col:nth-child(odd) {
+  background-color: rgb(231, 231, 231);
+}
+  </style>
+  
+  
+</head>
+
+
+
+
+
+<body>
+
+
+  <!-------------------------------------- BACK-TO-TOP BUTTTON --------------------------------------------- -->
+  <a class="btt-button"><i class="fa fa-angle-double-up wow fadeInRight" data-wow-delay="0.3s"></i></a>
+
+  <!--STAR HEADER: Logo - Time - Hotline - Login -->
+  <!-- ============================================================== -->
+  <header>
+
+    <!-- Header TOP: Logo - Time - Hotline - Login -->
+    <div class="container headertop wow fadeInDown" data-wow-delay="0.3s">
+      <div class="row">
+
+        <div class="col-md-2">
+          <img src="https://play-lh.googleusercontent.com/3_XlWW-JEdHK2r5SoPtX8e5g9v6j9s9HeY2qwb2H8VSJplFP5w1-qvJE-JzPFLPqnw=w480-h960-rw"  width="80px" class="img-responsive center-block logo" alt="Logo">
+        </div>
+
+        <div class="headertopright">
+          <div class="col-md-9 col-md-offset-1">
+
+            <div class="col-md-3">
+              <div class="top-bar-item ">
+                <div class="top-bar-icon">
+                  <i class="flaticon-time"></i>
+                </div>
+                <div class="top-bar-text">
+                  <p>Open Hour</p>
+                  <p>8.AM-17.PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 ">
+              <div class="top-bar-item ">
+                <div class="top-bar-icon">
+                  <i class="flaticon-smartphone"></i>
+                </div>
+                <div class="top-bar-text">
+                  <p>Hotline</p>
+                  <p>012 345 678</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 ">
+              <div class="top-bar-item ">
+                <div class="top-bar-icon">
+                  <i class="flaticon-user"></i>
+                </div>
+                <div class="top-bar-text">
+                  <h3><a href="login.html">Account</a></h3>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div> <!-- END Header TOP -->
+
+    <!--Header Navigation: Menu Trai - Menu Phai -->
+    <div class="navbar navbar-default header-inner wow fadeInRight" data-wow-delay="0.3s">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="hide-icon col-1"><a href="login.html">
+              <i class="flaticon-user"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-12 ">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+            <!-- Menu Trai -->
+            <ul class="nav navbar-nav col-lg-9 col-md-9">
+              <li> <a href="index.html"> <b>Home</b> </a></li>
+              <li> <a href="blog.html"><b>News</b></a></li>
+              <li class="active"> <a href="product.html"><b>Products</b></a></li>
+            
+              <li> <a href="gallery.html"><b>Gallery</b></a></li>
+              <li> <a href="about.html"><b>About Us</b></a></li>
+              <li> <a href="contact.html"><b>Contact Us</b></a></li>
+            </ul>
+
+            <!-- Menu Phai -->
+            <ul class="nav navbar-nav navbar-right col-lg-3  col-md-3 col-sm-3">
+              <form class="navbar-form navbar-left search" action="index.html">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-danger" type="submit">
+                      <i class=""><span class="fa fa-search"></span></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <div class=" account-icon "><a href="login.html">
+                  <i class="flaticon-add-user"></i></a>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </header>
+  <!--END HEADER-->
+ <div class=" wow fadeInRight">
+  <h3 style="text-align: center; padding: 10px 5px;">You can download Tradition word File to read more. </h3>
+  <div class="col-wrap">
+    <div class="col">
+      <img src="https://www.worldometers.info/img/flags/small/tn_vm-flag.gif" width="60px"><shessh style="padding: 5px 6px">Vietnam</shessh>
+      <hr style="border: 1px solid black;">
+      <ul>
+        <li><a href="images/Word files/VN-Lunar New Year .rar" download>Lunar New Year ( Tet Nguyen Dan)</a></li>
+        <li><a href="images/Word files/VN-Hung King Temple Festival.rar">Hung King Temple Festival</a></li>
+        <li><a href="images/Word files/VN-Giong Festival.rar">Giong Festival</a></li>
+        <li><a href="images/Word files/VN-Lim Festival.rar">Lim Festival</a></li>
+        <li><a href="images/Word files/VN-Mid-Autumn Festival.rar">Mid-Autumn Festival</a></li>
+        <li><a href="images/Word files/VN-Ghost Festival Wandering Souls Day.rar">Ghost Festival/ Wandering Souls Day</a></li>
+        <li><a href="images/Word files/VN-Independence Day.rar">Independence Day</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <img src="https://www.worldometers.info/img/flags/rs-flag.gif" width="60px"><shessh style="padding: 5px 6px">Russia</shessh>
+      <hr style="border: 1px solid black;">
+      <ul>
+        <li><a href="images/Word files/Russia-New Year Celebrations .rar">New Year Celebrations - 31st December -1st January</a></li>
+        <li><a href="images/Word files/Russia-Orthodox Christmas.rar">Orthodox Christmas</a></li>
+        <li><a href="images/Word files/Russia-Maslenitsa Festival.rar">Maslenitsa Festival</a></li>
+        <li><a href="images/Word files/Russia-Reindeer Herders Festival.rar">Reindeer Herder's Festival</a></li>
+        <li><a href="images/Word files/Russia-Moscow Golden Mask Festival.rar">Moscow Golden Mask Festival</a></li>
+        <li><a href="images/Word files/Russia-Victory Day.rar">Victory Day</a></li>
+        
+      </ul>
+    </div>
+  
+    <div class="col">
+     <img src="https://www.worldometers.info/img/flags/br-flag.gif" width="60px"><shessh style="padding: 5px 6px">Brazil</shessh>
+     <hr style="border: 1px solid black;">
+     <ul>
+       <li><a href="images/Word files/Brasil-Carnival festival.rar">Carnival - The most exciting festival</a></li>
+       <li><a href="images/Word files/Brasil-Semana.rar">Semana Santa</a></li>
+       <li><a href="images/Word files/Brasil-Bonfim Stairs Washing.rar">Bonfim Stairs Washing</a></li>
+       <li><a href="images/Word files/Brasil-Parintins.rar">Parintins . Folklore Festival</a></li>
+       <li><a href="images/Word files/Brasil-Festa Junina.rar">Festa Junina</a></li>
+       
+     </ul>
+    </div>
+  </div>
+  
+  
+  <br>
+  <div class="col-wrap">
+    <div class="col">
+      <img src="https://www.worldometers.info/img/flags/us-flag.gif" width="60px"><shessh style="padding: 5px 6px">USA</shessh>
+      <hr style="border: 1px solid black;">
+      <ul>
+        <li><a href="images/Word files/US-Christmas.rar">Christmas (December 25)</a></li>
+        <li><a href="images/Word files/US-Thanksgiving.rar">Thanksginving (November 4th Thursday)</a></li>
+        <li><a href="images/Word files/US-Halloween.rar">Halloween 31/10</a></li>
+        <li><a href="images/Word files/US-Chitlin Strut Festival.rar">Chitlin Strut Festival</a></li>
+        <li><a href="images/Word files/US-Mash Festival.rar">Mash Festival, Barnesville</a></li>
+        <li><a href="images/Word files/US-caterpillar.rar">Caterpillar Festival</a></li>
+        <li><a href="images/Word files/US-Sheeps Parade.rar">Sheep's Parade</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <img src="https://www.worldometers.info/img/flags/in-flag.gif" width="60px"><shessh style="padding: 5px 6px">India</shessh>
+      <hr style="border: 1px solid black;">
+      <ul>
+        <li><a href="images/Word files/India-Holi.rar">Holi</a></li>
+       <li><a href="images/Word files/India-Diwali.rar">Diawali</a></li>
+       <li><a href="images/Word files/India-Ganesh Chaturthi.rar">Ganesh Chaturthi</a></li>
+       <li><a href="images/Word files/India-Onam.rar">Onam</a></li>
+       <li><a href="images/Word files/India-Durga.rar">Durga Puja-Durgotsava or Navaratri</a></li>
+      
+      </ul>
+    </div>
+  
+    <div class="col">
+     <img src="https://www.worldometers.info/img/flags/ch-flag.gif" width="60px"><shessh style="padding: 5px 6px">China</shessh>
+     <hr style="border: 1px solid black;">
+     <ul>
+       <li><a href="images/Word files/China-New Year.rar">Chinese New Year (Dates, Traditions, Animal Signs )</a></li>
+       <li><a href="images/Word files/China-Lantern Festival .rar">Lantern Festival (Yuan Xiao Jie)</a></li>
+       <li><a href="images/Word files/China-Qingming Festival.rar">Qingming Festival</a></li>
+       <li><a href="images/Word files/China-Dragon Boat Festival .rar">Dragon Boat Festival (June)</a></li>
+       <li><a href="images/Word files/China-Double Seventh Festival .rar">Double Seventh Festival (July)</a></li>
+       <li><a href="images/Word files/China-Ghost festival .rar">Ghost Festival (August)</a></li>
+       <li><a href="images/Word files/China-Mid-Autumn festival .rar">Mid-Autumn Festival (September)</a></li>
+     </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="col-wrap">
+    <div class="col">
+      <img src="https://www.worldometers.info/img/flags/mx-flag.gif" width="60px"><shessh style="padding: 5px 6px">Mexico</shessh>
+      <hr style="border: 1px solid black;">
+      <ul>
+        <li><a href="images/Word files/Mexico-Dia de la Virgen de Guadalupe.rar">Día de la Virgen de Guadalupe</a></li>
+        <li><a href="images/Word files/Mexico-Dia de Muertos.rar">Día de Muertos</a></li>
+        <li><a href="images/Word files/Mexico-Independence Day.rar">Independence Day</a></li>
+        <li><a href="images/Word files/Mexico-Festival de Mexico en el Centro Historico.rar">Festival de México en el Centro Histórico</a></li>
+        <li><a href="images/Word files/Mexico-Autumn of Tenochtitlan.rar">Autumn of Tenochotitlán</a></li>
+        <li><a href="images/Word files/Mexico-Feria Nacional del Mole.rar">Feria Nacional del Mole</a></li>
+        <li><a href="images/Word files/Mexico-Marcha del Orgullo.rar">Marcha del Orgullo</a></li>
+        <li><a href="images/Word files/Mexico-Fiesta de Santa Cecilia.rar">Fiesta de Santa Cecilia</a></li>
+        <li><a href="images/Word files/Mexico-Ambulante Film Festival.rar">Ambulante Film Festival</a></li>
+        <li><a href="images/Word files/Mexico-Vive Latino.rar">Vie Lantino</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+      <img src="https://www.worldometers.info/img/flags/ja-flag.gif" width="60px"><shessh style="padding: 5px 6px">Japan</shessh>
+      <hr style="border: 1px solid black;">
+      <ul>
+        <li><a href="images/Word files/Japan-Aomori.rar">Aomori Nebuta Festival, Aomori</a></li>
+        <li><a href="images/Word files/Japan-Kanda Matsuri.rar">Kanda Matsuri, Tokyo</a></li>
+        <li><a href="images/Word files/Japan-Chichibu Yomatsuri.rar">Chichibu Yomatsuri, Saitama</a></li>
+        <li><a href="images/Word files/Japan-Sendai Tanabata Matsuri.rar">Sendai Tanabata Matsuri, Miyagi</a></li>
+        <li><a href="images/Word files/Japan-Tokushima Awa Odori.rar">Tokushima Awa Odori, Tokushima</a></li>
+        <li><a href="images/Word files/Japan-Kyoto Gion Matsuri.rar">Kyoto Gion Matsuri, Kyoto</a></li>
+        <li><a href="images/Word files/Japan-Tenjin Matsuri.rar">Tenjin Matsuri, Osaka</a></li>
+        <li><a href="images/Word files/Japan-Karatsu Kunchi Festival.rar">Karatsu Kunchi Festival, Saga</a></li>
+        <li><a href="images/Word files/Japan-Hakata Dontaku Matsuri.rar">Hakata Dontaku Matsuri, Fukuoka</a></li>
+        <li><a href="images/Word files/Japan-Sapporo Snow Festival.rar">Sapporo Snow Festival, Hokkaido</a></li>
+      </ul>
+    </div>
+  
+    <div class="col">
+     <img src="https://www.worldometers.info/img/flags/fr-flag.gif" width="60px"><shessh style="padding: 5px 6px">France</shessh>
+     <hr style="border: 1px solid black;">
+     <ul>
+       <li><a href="images/Word files/France-Berck-sur-Mer Kite Festival.rar">Berck-sur-Mer Kite Festival</a></li>
+       <li><a href="images/Word files/France-Cannes Film Festival.rar">Cannes Film Festival</a></li>
+       <li><a href="images/Word files/France-Nice Carnival.rar">Nice Carnival</a></li>
+       <li><a href="images/Word files/France-Festival Medieval de Sedan.rar">Festival Medieval de Sedan</a></li>
+       <li><a href="images/Word files/France-Bastille Day.rar">Bastille Day</a></li>
+       <li><a href="images/Word files/France-La Fete de la Musique.rar">La Fête de la Musique</a></li>
+       <li><a href="images/Word files/France-Choregies dOrange.rar">Chorégies d'Orange</a></li>
+       <li><a href="images/Word files/France-Festival of Lights Lyon.rar">Festival od Lights, Lyon</a></li>
+     </ul>
+    </div>
+  
+    
+  </div>
+ </div>
+
+
+
+
+    
+  
+    <!--------------------------------------- FOOTER START ---------------------------------------------->
+    <div class="footer wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-lg-3">
+            <div class="footer-contact">
+              <h2>Contact</h2>
+              <p><i class="fa fa-map-marker-alt"></i>
+                  391A Nam Ky Khoi Nghia, District 3, Ho Chi Minh City
+                  </p>
+              <p><i class="fa fa-phone-alt"></i>+123 456 789</p>
+              <p><i class="fa fa-envelope"></i>group6@gmail.com</p>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+            <div class="footer-link">
+              <h2>Quick Link</h2>
+                        <a href="product.html">Vietnamese Traditions</a>
+                        <a href="product.html">American Traditions</a>
+                        <a href="product.html">Russian Traditions</a>
+                        <a href="product.html">Mexican Traditions</a>
+                        <a href="product.html">Japanese Traditions</a>
+                        <a href="product.html">.....</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-lg-3">
+            <div class="news">
+              <h2>Quick chat</h2>
+              <p>
+                Chat with us anything you want
+              </p>
+              <div class="form">
+                <form action="" onsubmit="alert('Thanks for chatting with us!')">
+                  <input class="form-control" placeholder="Chat with us " required>
+                  <button class="btn" type="submit">Submit</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid copyright">
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; <a href="index.html">Moonlight-Events</a>
+          </div>
+          <div class="footer-social col-md-4 ">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="col-md-4 ">
+            <p><a href="">Group 6</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------Footer End--------------------------------------------- -->
+
+    <!-- Optional JavaScript -->
+    <!-- ------------------------------------------Script------------------------------------------- -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/main.js"></script>
+    
+
+    <script>
+      //Sticky navbar
+      $(function () {
+        var navbar = $('.header-inner');
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 100) {
+            navbar.removeClass('navbar-scroll');
+          } else {
+            navbar.addClass('navbar-scroll');
+          }
+        });
+      });
+
+      // Scroll to Top button
+      var btn = $('.btt-button');
+      btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+      });
+      
+
+
+     
+
+
+    </script>
+
+</body>
+
+</html>
